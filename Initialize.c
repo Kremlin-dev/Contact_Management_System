@@ -16,5 +16,4 @@ void initial(void)
 		num[i].key = 0;
 		num[i].value = 0;
 	}
-	printf("%s\n %s\n", num[1].key, num[255].value);
 }
