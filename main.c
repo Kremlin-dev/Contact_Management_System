@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	Add_item("Isaac", "0244278257");
-  Add_item("Isaac Ampon", "0244278257");
-	return (0);
+
+  return (0);
 }
