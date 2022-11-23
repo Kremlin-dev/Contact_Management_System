@@ -7,24 +7,21 @@
   *@value: Contact number as string
   *Return: void
   */
-
+//struct contact num[SIZE];
 void Add_item(char *key, char *value)
-{
-	struct contact num[SIZE];
-	 int i;
+ {
+    int i = Hash_Fxn(key);
+    if (num[i].value == 0 )
+        {
+            num[i].key = key;
+            num[i].value = value;  
+            //printf("num[%d]: %s %s ", i, num[i].key,num[i].value);
+        }
+        else
+        {
+        printf("Name Exits on the List.\n");
+        
+        }    
 
-	 i = Hash_Fxn(key);
-	 if (num[i].value == 0)
-	 {
-		 num[i].key = key;
-		 num[i].value = value;
-		 printf("%s %s\n", num[i].key,num[i].value);
-
-	 }
-	 else
-	 {
-		  printf("Name Already exits\n");
-	 }
-
-}
+ }
 
