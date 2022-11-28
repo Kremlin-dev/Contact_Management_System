@@ -7,14 +7,15 @@
   *Return: Index value
   */
 
-int Hash_Fxn(char *key)
+int Hash_Fxn( char* key) 
 {
-	unsigned int i, index, sum = 0;
-
-	for (i = 0; i < strlen(key); i++)
+    const int p = 31;
+    int hash = 0;
+    long p_pow = 1;
+    for(int i = 0; i < strlen(key); i++) 
 	{
-		sum = 37 + sum + key[i];
-	}
-	return (index = sum % SIZE);
+        hash = (hash + (key[i] - 'a' + 1) * p_pow) % SIZE;
+        p_pow = (p_pow * p) % SIZE;
+    }
+    return (hash);
 }
-

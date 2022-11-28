@@ -13,7 +13,8 @@ void initial(void)
 
 	for (i = 0; i < SIZE; i++)
 	{
-		num[i].key = 0;
-		num[i].value = 0;
+		num[i].key = NULL;
+		num[i].value = NULL;
 	}
+	
 }
