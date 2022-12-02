@@ -1,11 +1,11 @@
-#include "CMS.h"
+#include "cms.h"
 #include <stdio.h>
 
 /**
-  * initial - sets elements at index i to 0
-  *
-  *Return: void
-  */
+ * initial - sets elements at index i to 0
+ *
+ *Return: void
+ */
 struct contact num[SIZE];
 void initial(void)
 {
@@ -16,5 +16,4 @@ void initial(void)
 		num[i].key = NULL;
 		num[i].value = NULL;
 	}
-	
 }
