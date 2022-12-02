@@ -12,4 +12,5 @@ void initial(void);
 void Add_item(char *key, char *value);
 void Remove_Item(char *key);
 void display_list();
+void search_contact(char *key);
 #endif
