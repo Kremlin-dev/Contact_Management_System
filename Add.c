@@ -15,6 +15,7 @@ void Add_item(char *key, char *value)
     {
         num[i].key = key;
         num[i].value = value;
+        printf("Contact Added Succesfully.\n");
     }
 
     else
