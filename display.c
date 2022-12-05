@@ -11,20 +11,23 @@
 void display_list()
 {
     int i;
-
-    if (num[i].key == NULL)
+/*
+    if (num[].key == NULL && num[].value == NULL)
     {
         printf("There are no contacts to display.\n");
     }
 
     else
     {
-        for (i = 1; i < SIZE - 1; i++)
+        */
+        
+        for (i = 0; i < SIZE ; i++)
         {
-            if (num[i].key != NULL)
+            if (num[i].key != NULL && num[i].value != NULL)
             {
                 printf(" %s %s\n", num[i].key, num[i].value);
             }
+            
         }
-    }
+   //}
 }
