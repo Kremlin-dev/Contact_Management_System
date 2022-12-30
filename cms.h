@@ -11,6 +11,7 @@ int Hash_Fxn(char *key);
 void initial(void);
 void Add_item(char *key, char *value);
 void Remove_Item(char *key);
-void display_list();
+//void display_list();
+void display();
 void search_contact(char *key);
 #endif

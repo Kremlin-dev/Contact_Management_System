@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 #include "cms.h"
 
 /**
@@ -8,26 +10,15 @@
  *Return: void
  */
 
-void display_list()
+void display()
 {
-    int i;
-/*
-    if (num[].key == NULL && num[].value == NULL)
-    {
-        printf("There are no contacts to display.\n");
-    }
-
-    else
-    {
-        */
-        
-        for (i = 0; i < SIZE ; i++)
-        {
-            if (num[i].key != NULL && num[i].value != NULL)
-            {
-                printf(" %s %s\n", num[i].key, num[i].value);
-            }
-            
-        }
-   //}
+  int i;
+  for (i = 0; i < SIZE;)
+  {
+  //if (num[i].value != NULL)
+  //{
+   printf("\n %s  %s \t", num[i].key,  num[i].value);
+ // }
+  i++;
+  }
 }
