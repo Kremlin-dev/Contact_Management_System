@@ -55,7 +55,5 @@ printf("Enter 1 to repeat menu: ");
 scanf("%d", &c);
 } while (c == 1);
 
-
-
 return (0);
 }

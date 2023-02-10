@@ -13,12 +13,13 @@
 void display()
 {
   int i;
-  for (i = 0; i < SIZE;)
-  {
-  //if (num[i].value != NULL)
-  //{
-   printf("\n %s  %s \t", num[i].key,  num[i].value);
- // }
-  i++;
-  }
+  char *key;
+  i = Hash_Fxn(key);
+  if (num[i].value != NULL)
+    printf("\n %s  %s \t", num[i].key,  num[i].value);
+  else 
+    printf("Hello, we are also trying it out, hmm");
+
+
+
 }
