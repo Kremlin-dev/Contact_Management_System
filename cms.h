@@ -1,17 +1,18 @@
-#ifndef _MAIN_H
-#define _MAIN_H
-#define SIZE 256
+#ifndef CONTACT_H
+#define CONTACT_H
+
 struct contact
 {
     char *key;
     char *value;
 };
-extern struct contact num[SIZE];
-int Hash_Fxn(char *key);
+
 void initial(void);
+int Hash_Fxn(char *key);
 void Add_item(char *key, char *value);
 void Remove_Item(char *key);
-//void display_list();
 void display();
 void search_contact(char *key);
+void edit_contact(char *key);
+
 #endif
