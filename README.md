@@ -1,1 +1,1 @@
-Implement a contact management system in C
+Implementing a contact management system in C
