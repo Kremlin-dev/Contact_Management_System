@@ -1,1 +1,1 @@
-Functions to implement a contact management system
+Implement a contact management system in C
